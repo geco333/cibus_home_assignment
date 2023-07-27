@@ -13,7 +13,7 @@ class User(Base):
 
 
 class Message(Base):
-    __tablename__ = "Messages"
+    __tablename__ = "messages"
 
     id = Column(Integer, primary_key=True, index=True)
     author_id = Column(Integer, ForeignKey("users.id"))
